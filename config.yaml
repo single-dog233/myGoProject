@@ -1,0 +1,5 @@
+
+DBServer: "127.0.0.1:3306"
+DBName: "mysqltest"
+UserName: "root"
+PWD: "123456789123456789"

@@ -1,8 +1,11 @@
 package handler
 
-import "baidu/model"
+import (
+	"baidu/DataAccess"
+	"baidu/DataEntity"
+)
 
-func GetUserInfo(user *model.User) {
-	user.UserId = "123"
-	user.UserName = "456"
+func GetUserInfo(userId string) *DataEntity.Tbl_User {
+	user := DataAccess.GetUserInfo(userId)
+	return user
 }
